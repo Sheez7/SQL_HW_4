@@ -91,20 +91,20 @@ INSERT INTO
     Collections(collection_id, title, release_year)
 
 VALUES
-    ('1', 'Borderlands 2 ost', '2005-11-18'),
-    ('2', 'Modern metal', '2018-01-01'),
-    ('3', 'Far cry 3 ost', '2009-07-08'),
-    ('4', 'Love And Robots', '2021-01-01'),
-    ('5', 'The best of Fear Factory', '2015-01-12'),
-    ('6', '100 Greatest hits of Metal', '2020-06-06'),
-    ('7', 'NFS: Payback', '2002-08-06'),
-    ('8', 'Minimal_techno_2022', '2022-03-25');
+    ('1', 'Borderlands 2 ost', '18-11-2005'),
+    ('2', 'Modern metal', '01-01-2018'),
+    ('3', 'Far cry 3 ost', '07-08-2009'),
+    ('4', 'Love And Robots', '01-01-2021'),
+    ('5', 'The best of Fear Factory', '01-12-2015'),
+    ('6', '100 Greatest hits of Metal', '06-06-2020'),
+    ('7', 'NFS: Payback', '08-06-2017'),
+    ('8', 'Minimal_techno_2022', '25-10-2022');
 
 
 --связь жанров и исполнителей
 INSERT INTO 
 
-    Musicians_Genres(genre_id, artist_id) 
+    Musicians_Genres(genre_id, musician_id) 
 
 VALUES
     ('1', '1'),
@@ -127,7 +127,7 @@ VALUES
 --связь альбомов и исполнителей
 INSERT INTO 
 
-    Albums_Musicians(Artist_id, album_id)
+    Albums_Musicians(musician_id, album_id)
 
 VALUES
     ('1', '1'),

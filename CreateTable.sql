@@ -41,6 +41,6 @@ create table IF NOT EXISTS Collections (
 
 create table Collections_Tracks (
     track_id INTEGER REFERENCES Tracks (track_id),
-    collection_id INTEGER REFERENCES Collection (collection_id),
+    collection_id INTEGER REFERENCES Collections (collection_id),
     PRIMARY KEY (track_id, collection_id)
 );
