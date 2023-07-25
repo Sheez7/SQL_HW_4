@@ -35,25 +35,26 @@ INSERT INTO
     Albums(album_id, title, release_year)
 
 VALUES
-    ('1', 'Become', '2018-28-09'),
-    ('2', 'Antihero', '2015-18-09'),
+   
+    ('1', 'Become', '2018-09-28'),
+    ('2', 'Antihero', '2015-09-18'),
     ('3', 'Join the Q', '2009-02-02'),
     ('4', 'Spirit in the System', '2010-07-07'),
-    ('5', 'Here comes the Hotstepper', '1995-11-01'),
-    ('6', 'Tramplin` Down Babylon', '2016-06-04'),
-    ('7', 'Make it bun dem', '2012-01-05'),
-    ('8', 'Welcome to Jamrock', '2005-12-09'),
+    ('5', 'Here comes the Hotstepper', '1995-01-11'),
+    ('6', 'Tramplin` Down Babylon', '2016-04-06'),
+    ('7', 'Make it bun dem', '2012-05-01'),
+    ('8', 'Welcome to Jamrock', '2005-09-12'),
     ('9', 'Demanufacture', '1995-03-03'),
-    ('10', 'Genexus', '2015-07-08'),
-    ('11', 'Redfog', '2018-03-02'),
-    ('12', 'Descent', '2023-08-05'),
-    ('13', 'The Infamous', '1995-25-04'),
-    ('14', 'Red Teenage melody', '2016-13-06'),
-    ('15', 'Techno nun', '2022-04-12'),
+    ('10', 'Genexus', '2015-08-07'),
+    ('11', 'Redfog', '2018-02-03'),
+    ('12', 'Descent', '2023-05-08'),
+    ('13', 'The Infamous', '1995-04-25'),
+    ('14', 'Red Teenage melody', '2016-06-13'),
+    ('15', 'Techno nun', '2022-12-04'),
     ('16', 'Space Diver', '2020-03-23');
 
 UPDATE Albums
-SET release_year = '1995-25-04'
+SET release_year = '1995-04-25'
 WHERE album_id = 13;
 
 
