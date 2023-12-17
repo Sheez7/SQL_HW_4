@@ -72,3 +72,37 @@ HAVING COUNT(track_name) = (
 	ORDER BY 1
 	LIMIT 1
 	);
+	
+--10 Название и продолжительность самого длительного трека:
+
+SELECT t.track_name, duration
+FROM tracks
+ORDER BY duration DESC
+LIMIT 1;
+
+
+--11 Название треков, продолжительность которых не менее 3,5 минут:
+
+SELECT t.track_name
+FROM tracks
+WHERE duration >= 3.5;
+
+
+--12 Названия сборников, вышедших в период с 2018 по 2020 год включительно:
+
+SELECT c.collection_name
+FROM collections
+WHERE release_year BETWEEN 2018 AND 2020;
+
+--13 Исполнители, чьё имя состоит из одного слова:
+
+SELECT a.artist_name
+FROM artists
+WHERE artist_name NOT LIKE '% %'; 
+
+--14 Название треков, которые содержат слово «мой» или «my»:
+
+SELECT t.track_name
+FROM tracks
+WHERE track_name ILIKE '%мой%' OR track_name ILIKE '%my%';
+
